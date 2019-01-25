@@ -6,11 +6,6 @@ public class ItemPickup : Interactable
 {
     public Item item;
 
-    private void Start()
-    {
-        item.itemObject = gameObject;
-    }
-
     public override void Interact()
     {
         PickUp();
@@ -20,6 +15,6 @@ public class ItemPickup : Interactable
     {
         Debug.Log("Picking up " + item.name);
         Inventory.Add(item);
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
+        DestroyImmediate(gameObject);
     }
 }
