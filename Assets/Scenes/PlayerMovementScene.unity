@@ -1131,11 +1131,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 147881e590171f84ea6805d10052f9db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
   cam: {fileID: 48952154}
   movementMask:
     serializedVersion: 2
     m_Bits: 512
+  player: {fileID: 1884366754}
+  fpsController: {fileID: 0}
 --- !u!4 &1693488242
 Transform:
   m_ObjectHideFlags: 0
@@ -1256,6 +1257,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1872510242}
   m_CullTransparentMesh: 0
+--- !u!1 &1884366754 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 3}
+  m_PrefabInstance: {fileID: 1832255782}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1921787007
 GameObject:
   m_ObjectHideFlags: 0
