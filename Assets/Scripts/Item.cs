@@ -17,6 +17,6 @@ public class Item : ScriptableObject
     public void SpawnItem()
     {
         itemObject.transform.position = GameObject.Find("Player").transform.position;
-        itemObject.GetComponent<MeshRenderer>().enabled = true;
+        itemObject.SetActive(true);
     }
 }

@@ -13,6 +13,9 @@ public class GameManager : MonoBehaviour
     public FirstPersonController fpsController;
     private bool currentState = true;
 
+    public static bool curtainActivated;
+    public static int curtainCount;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -27,7 +30,7 @@ public class GameManager : MonoBehaviour
         {
             Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out RaycastHit hit, 100, movementMask))
+            if (Physics.Raycast(ray, out RaycastHit hit, 10, movementMask))
             {
                 Interactable interactable = hit.collider.GetComponent<Interactable>();
                 if (interactable != null)
@@ -41,6 +44,12 @@ public class GameManager : MonoBehaviour
         {
             currentState = !currentState;
             ChangeFPS(currentState);
+        }
+
+        if (!curtainActivated && curtainCount >= 5)
+        {
+            Debug.Log("Curtain dropped the key!");
+            curtainActivated = true;
         }
     }
 

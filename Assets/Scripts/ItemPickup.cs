@@ -20,6 +20,6 @@ public class ItemPickup : Interactable
     {
         Debug.Log("Picking up " + item.name);
         Inventory.Add(item);
-        gameObject.GetComponent<MeshRenderer>().enabled = false;
+        gameObject.SetActive(false);
     }
 }
