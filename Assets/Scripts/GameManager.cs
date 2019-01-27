@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     public FirstPersonController fpsController;
     private bool currentState = true;
 
+    /* For curtain mission. */
     public static bool curtainActivated;
     public static int curtainCount;
 
