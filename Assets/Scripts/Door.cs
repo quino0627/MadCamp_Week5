@@ -17,7 +17,7 @@ public class Door : Interactable
         Cursor.visible = true;
         Debug.Log("Door closed");
         
-        AudioSource.PlayClipAtPoint(audioClip, transform.position,0.4f);
+        AudioSource.PlayClipAtPoint(audioClip, transform.position,0.7f);
         // 여기에 if문으로 열쇠합
     }
     // Start is called before the first frame update
