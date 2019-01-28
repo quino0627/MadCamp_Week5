@@ -1,28 +1,29 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class SinkClick : Interactable
+public class SceneChange : Interactable
 {
-    public GameObject water;
-    
+    public GameObject mini;
+    public SceneChange sc;
 
     public override void Interact()
     {
-        OnClick();
+        Debug.Log("Hi Se");
+        Cursor.visible = true;
+        GameManager.gamemanage.PauseGame();
     }
 
     void OnClick()
     {
-        Debug.Log("click!");
-        Cursor.visible = true;
-        water.SetActive(true);
         
     }
+    
     // Start is called before the first frame update
     void Start()
     {
-            
+        
     }
 
     // Update is called once per frame

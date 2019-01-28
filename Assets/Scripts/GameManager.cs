@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Characters.FirstPerson;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,9 +17,14 @@ public class GameManager : MonoBehaviour
     public static bool curtainActivated;
     public static int curtainCount;
 
+    public static GameManager gamemanage;
+
+    public bool pause = false;
+
     // Start is called before the first frame update
     void Start()
     {
+        gamemanage = this;
         fpsController = GameObject.Find("Player").GetComponent<FirstPersonController>();
     }
 
@@ -59,5 +65,20 @@ public class GameManager : MonoBehaviour
         FirstPersonController fpsScript = player.GetComponent<FirstPersonController>();
 
         fpsController.m_MouseLook.SetCursorLock(enable);
+    }
+
+    public void PauseGame()
+    {
+        // SceneManager.LoadScene("MiniGameScene");
+        ChangeFPS(false);
+        SceneManager.LoadScene("MiniGameScene", LoadSceneMode.Additive);
+
+    }
+
+    public void ResumeGame()
+    {
+        GameManager gp = FindObjectOfType<GameManager>();
+        gp.pause = false;
+        SceneManager.UnloadSceneAsync("MiniGameScene");
     }
 }

@@ -2,27 +2,28 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SinkClick : Interactable
+public class Door : Interactable
 {
-    public GameObject water;
-    
+    public AudioClip audioClip;
 
     public override void Interact()
     {
         OnClick();
     }
 
-    void OnClick()
+    public void OnClick()
     {
         Debug.Log("click!");
         Cursor.visible = true;
-        water.SetActive(true);
+        Debug.Log("Door closed");
         
+        AudioSource.PlayClipAtPoint(audioClip, transform.position,0.4f);
+        // 여기에 if문으로 열쇠합
     }
     // Start is called before the first frame update
     void Start()
     {
-            
+        
     }
 
     // Update is called once per frame

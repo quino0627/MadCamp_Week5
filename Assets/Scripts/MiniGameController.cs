@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class MiniGameController : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class MiniGameController : MonoBehaviour
     public Text gameOverText;
     public int ran;
     Sprite IL, GA;
+    
     /*FULLHP = Resources.Load<Sprite>("suit_life_meter_2");      //FULL
         LESSHP = Resources.Load<Sprite>("suit_life_meter_0");    //-1
         LESSERHP = Resources.Load<Sprite>("suit_life_meter_3");  //-2
@@ -114,7 +116,8 @@ public class MiniGameController : MonoBehaviour
 
             gameOverText.text = "SUCCESS!!";
         }
-        
+
+        GameManager.gamemanage.ResumeGame();
     }
 
     void ChangeSides()
