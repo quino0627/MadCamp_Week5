@@ -6,6 +6,7 @@ public class Door : Interactable
 {
     public AudioClip audioClip;
     public AudioClip audioClip2;
+    public GameObject overPanel;
 
     public override void Interact()
     {
@@ -20,6 +21,7 @@ public class Door : Interactable
         {
             AudioSource.PlayClipAtPoint(audioClip2, transform.position);
             Debug.Log("Open");
+            overPanel.SetActive(true);
         }
         else
         {
