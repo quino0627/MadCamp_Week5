@@ -13,7 +13,7 @@ public class Inventory : MonoBehaviour
     public static bool Key1 = false;
     public static bool Key2 = false;
 
-  
+
     public static void Add(Item item)
     {
         items.Add(item);
