@@ -2428,7 +2428,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1410490562}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1410490564
 Camera:
   m_ObjectHideFlags: 0
@@ -3586,6 +3586,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgument
       value: 
       objectReference: {fileID: 8300000, guid: 4789e3a17350cbd4188c71b2550749c8, type: 3}
+    - target: {fileID: 1394408717420970703, guid: 946d4d89a6e27c74296155e78ec1855d,
+        type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 3625616033507788304, guid: 946d4d89a6e27c74296155e78ec1855d,
         type: 3}
       propertyPath: m_Sprite
@@ -3596,11 +3601,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Type
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1394408717420970703, guid: 946d4d89a6e27c74296155e78ec1855d,
-        type: 3}
-      propertyPath: m_Text
-      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 946d4d89a6e27c74296155e78ec1855d, type: 3}

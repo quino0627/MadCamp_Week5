@@ -21,6 +21,9 @@ public class GameManager : MonoBehaviour
     public static bool curtainActivated;
     public static int curtainCount;
 
+    public GameObject masterKey;
+    public GameObject seObject;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +36,24 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Inventory.Glue && Inventory.Key1 && Inventory.Key2)
+        {
+            //TODO
+            Debug.Log("따주었어요");
+            for (int i = Inventory.items.Count - 1; i >= 0; i--)
+            {
+                Inventory.Remove(Inventory.items[i]);
+            }
+
+            Instantiate(seObject);
+
+            masterKey.SetActive(true);
+
+            Inventory.Glue = false;
+            Inventory.Key1 = false;
+            Inventory.Key2 = false;
+        }
+
         // If Bed Camera is activated, then click to return to main camera.
         if (!isMainCamActivated)
         {
