@@ -8,10 +8,14 @@ public class MiniGameController : MonoBehaviour
 {
     public Button[] buttonList;
 
+    public static MiniGameController minigame;
+
     public GameObject gameOverPanel;
     public Text gameOverText;
     public int ran;
     Sprite IL, GA;
+
+    public static bool result;
     
     /*FULLHP = Resources.Load<Sprite>("suit_life_meter_2");      //FULL
         LESSHP = Resources.Load<Sprite>("suit_life_meter_0");    //-1
@@ -117,7 +121,13 @@ public class MiniGameController : MonoBehaviour
             gameOverText.text = "SUCCESS!!";
         }
 
+        if (isWin == true)
+            SinkClick.result = true;
+        else
+            SinkClick.result = false;
+
         GameManager.gamemanage.ResumeGame();
+
     }
 
     void ChangeSides()

@@ -7,12 +7,12 @@ using UnityEngine.SceneManagement;
 public class GameManager : MonoBehaviour
 {
     public static GameManager gamemanage;
-
+    
     private Camera mainCam;
     private Camera currentCam;
     private bool isMainCamActivated;
     public LayerMask movementMask;
-
+    
     public FirstPersonController fpsController;
     private bool currentState = true;
 
@@ -82,7 +82,9 @@ public class GameManager : MonoBehaviour
     {
         // SceneManager.LoadScene("MiniGameScene");
         currentState = false;
+        // 상호작용
         ChangeFPS(false);
+        // 마우스 푸는거
         SceneManager.LoadScene("MiniGameScene", LoadSceneMode.Additive);
 
     }
@@ -90,6 +92,7 @@ public class GameManager : MonoBehaviour
     public void ResumeGame()
     {
         Invoke("ResumeGameBody", 2.0f);
+        // 몇초 후에 저 함수를 실행하는 거
     }
 
     void ResumeGameBody()
