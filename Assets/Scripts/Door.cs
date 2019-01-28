@@ -16,9 +16,9 @@ public class Door : Interactable
     {
         
         // 여기에 if문으로 열쇠합
-        if(Inventory.Glue == true)
+        if(Inventory.masterkey == true)
         {
-            AudioSource.PlayClipAtPoint(audioClip2, transform.position, 0.7f);
+            AudioSource.PlayClipAtPoint(audioClip2, transform.position);
             Debug.Log("Open");
         }
         else

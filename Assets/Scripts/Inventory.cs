@@ -12,7 +12,7 @@ public class Inventory : MonoBehaviour
     public static bool Glue = false;
     public static bool Key1 = false;
     public static bool Key2 = false;
-
+    public static bool masterkey=false;
 
     public static void Add(Item item)
     {
@@ -31,6 +31,11 @@ public class Inventory : MonoBehaviour
         {
             Key2 = true;
             Debug.Log("께임끼 쭈움");
+        }
+        if (item.name == "masterkey")
+        {
+            masterkey = true;
+            Debug.Log("마스터끼 쭈움");
         }
 
 
