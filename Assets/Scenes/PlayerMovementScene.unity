@@ -274,12 +274,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 40b8fd596870e5e4cb4ccb145b409d1e, type: 3}
---- !u!20 &48952154 stripped
-Camera:
-  m_CorrespondingSourceObject: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0,
-    type: 3}
-  m_PrefabInstance: {fileID: 1832255782}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &51153357
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1907,14 +1901,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206458246}
     m_Modifications:
+    - target: {fileID: 155314, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
+      propertyPath: m_Name
+      value: Bed (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
         type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 155314, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
-      propertyPath: m_Name
-      value: Bed (2)
       objectReference: {fileID: 0}
     - target: {fileID: 424004, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3995,14 +3989,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206458246}
     m_Modifications:
+    - target: {fileID: 155314, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
+      propertyPath: m_Name
+      value: Bed
+      objectReference: {fileID: 0}
     - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
         type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 155314, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
-      propertyPath: m_Name
-      value: Bed
       objectReference: {fileID: 0}
     - target: {fileID: 424004, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8879,7 +8873,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &919483253
 PrefabInstance:
@@ -10551,6 +10545,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemsParent: {fileID: 198512836}
+  Glue: 0
+  seObject: {fileID: 1080980368178842362, guid: f27993f95fe28e14197b8ccba767c800,
+    type: 3}
+  tickSource: {fileID: 0}
 --- !u!114 &1431847416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10959,14 +10957,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206458246}
     m_Modifications:
+    - target: {fileID: 155314, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
+      propertyPath: m_Name
+      value: Bed (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
         type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 155314, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
-      propertyPath: m_Name
-      value: Bed (1)
       objectReference: {fileID: 0}
     - target: {fileID: 424004, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11627,13 +11625,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 147881e590171f84ea6805d10052f9db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 48952154}
   movementMask:
     serializedVersion: 2
     m_Bits: 512
   fpsController: {fileID: 718482926}
   curtainKey: {fileID: 458314258}
-  pause: 0
 --- !u!4 &1693488242
 Transform:
   m_ObjectHideFlags: 0
