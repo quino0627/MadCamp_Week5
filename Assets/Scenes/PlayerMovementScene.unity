@@ -1901,11 +1901,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206458246}
     m_Modifications:
-    - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 155314, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
       propertyPath: m_Name
       value: Bed (2)
@@ -1970,6 +1965,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 97be62316223402429bda49eb6811ea1, type: 2}
+    - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
         type: 3}
       propertyPath: m_Enabled
@@ -4164,11 +4164,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206458246}
     m_Modifications:
-    - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 155314, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
       propertyPath: m_Name
       value: Bed
@@ -4233,6 +4228,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9b6d8137d18d93541b038c9f2fee0d7f, type: 2}
+    - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
         type: 3}
       propertyPath: m_Enabled
@@ -9058,7 +9058,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
 --- !u!1001 &919483253
 PrefabInstance:
@@ -11232,11 +11232,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206458246}
     m_Modifications:
-    - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
-        type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 155314, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
       propertyPath: m_Name
       value: Bed (1)
@@ -11301,6 +11296,11 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3793049400c31c54099a1a3354b38aa5, type: 2}
+    - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
         type: 3}
       propertyPath: m_Enabled
@@ -11915,6 +11915,7 @@ MonoBehaviour:
     m_Bits: 2560
   fpsController: {fileID: 718482926}
   curtainKey: {fileID: 458314258}
+  masterKey: {fileID: 444490210}
   seObject: {fileID: 1080980368178842362, guid: f27993f95fe28e14197b8ccba767c800,
     type: 3}
 --- !u!4 &1693488242
