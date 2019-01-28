@@ -14,6 +14,9 @@ public class GameManager : MonoBehaviour
     public FirstPersonController fpsController;
     private bool currentState = true;
 
+    public GameObject curtainKey;
+
+    /* For curtain mission. */
     public static bool curtainActivated;
     public static int curtainCount;
 
@@ -54,16 +57,13 @@ public class GameManager : MonoBehaviour
 
         if (!curtainActivated && curtainCount >= 5)
         {
-            Debug.Log("Curtain dropped the key!");
             curtainActivated = true;
+            curtainKey.SetActive(true);
         }
     }
 
     public void ChangeFPS(bool enable)
     {
-        Debug.Log(enable);
-        FirstPersonController fpsScript = player.GetComponent<FirstPersonController>();
-
         fpsController.m_MouseLook.SetCursorLock(enable);
     }
 
