@@ -1901,6 +1901,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206458246}
     m_Modifications:
+<<<<<<< HEAD
+=======
+    - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> 26abeb4919372ba99c398cc11a41cb7d9c37b1d7
     - target: {fileID: 155314, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
       propertyPath: m_Name
       value: Bed (2)
@@ -1965,6 +1983,7 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 97be62316223402429bda49eb6811ea1, type: 2}
+<<<<<<< HEAD
     - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
         type: 3}
       propertyPath: m_Enabled
@@ -1980,6 +1999,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+=======
+>>>>>>> 26abeb4919372ba99c398cc11a41cb7d9c37b1d7
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
 --- !u!224 &399637976 stripped
@@ -2122,7 +2143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e60fe740302b6343ae16fb2478f6701, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: ca4e2675f9637c447959de0ff5e02a05, type: 2}
+  item: {fileID: 11400000, guid: 4275e2f07a69c064c87a7cd619dadec8, type: 2}
 --- !u!82 &444490213
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2819,7 +2840,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: e295e36b64bbb0e4fb74604edc7df1f6, type: 3}
-  audioClip2: {fileID: 8300000, guid: 29e9b29f25046f346b182318969783cb, type: 3}
+  audioClip2: {fileID: 8300000, guid: 11bd74033e1bcda4d8746b840c2ae2fd, type: 3}
 --- !u!4 &579871978 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6055472829569284018, guid: 79c3dccaff58a544083d35dfa9aa5988,
@@ -4164,6 +4185,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206458246}
     m_Modifications:
+<<<<<<< HEAD
+=======
+    - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> 26abeb4919372ba99c398cc11a41cb7d9c37b1d7
     - target: {fileID: 155314, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
       propertyPath: m_Name
       value: Bed
@@ -4228,6 +4267,7 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9b6d8137d18d93541b038c9f2fee0d7f, type: 2}
+<<<<<<< HEAD
     - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
         type: 3}
       propertyPath: m_Enabled
@@ -4243,6 +4283,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+=======
+>>>>>>> 26abeb4919372ba99c398cc11a41cb7d9c37b1d7
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
 --- !u!1 &874341472 stripped
@@ -11232,6 +11274,24 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 206458246}
     m_Modifications:
+<<<<<<< HEAD
+=======
+    - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+>>>>>>> 26abeb4919372ba99c398cc11a41cb7d9c37b1d7
     - target: {fileID: 155314, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
       propertyPath: m_Name
       value: Bed (1)
@@ -11296,6 +11356,7 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 3793049400c31c54099a1a3354b38aa5, type: 2}
+<<<<<<< HEAD
     - target: {fileID: 223346392463618322, guid: 5713ed639ef83f945b71f3b92342d629,
         type: 3}
       propertyPath: m_Enabled
@@ -11311,6 +11372,8 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+=======
+>>>>>>> 26abeb4919372ba99c398cc11a41cb7d9c37b1d7
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5713ed639ef83f945b71f3b92342d629, type: 3}
 --- !u!4 &1530503357 stripped
