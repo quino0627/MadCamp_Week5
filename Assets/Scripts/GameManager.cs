@@ -6,23 +6,18 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public static GameManager gamemanage;
+
     public Camera cam;
     public LayerMask movementMask;
-
-    public GameObject player;
 
     public FirstPersonController fpsController;
     private bool currentState = true;
 
-    public GameObject curtainKey;
-
     /* For curtain mission. */
+    public GameObject curtainKey;
     public static bool curtainActivated;
     public static int curtainCount;
-
-    public static GameManager gamemanage;
-
-    public bool pause = false;
 
     // Start is called before the first frame update
     void Start()
@@ -70,15 +65,24 @@ public class GameManager : MonoBehaviour
     public void PauseGame()
     {
         // SceneManager.LoadScene("MiniGameScene");
+        currentState = false;
+        // 상호작용
         ChangeFPS(false);
+        // 마우스 푸는거
         SceneManager.LoadScene("MiniGameScene", LoadSceneMode.Additive);
 
     }
 
     public void ResumeGame()
     {
-        GameManager gp = FindObjectOfType<GameManager>();
-        gp.pause = false;
+        Invoke("ResumeGameBody", 2.0f);
+        // 몇초 후에 저 함수를 실행하는 거
+    }
+
+    void ResumeGameBody()
+    {
         SceneManager.UnloadSceneAsync("MiniGameScene");
+        currentState = true;
+        ChangeFPS(true);
     }
 }
