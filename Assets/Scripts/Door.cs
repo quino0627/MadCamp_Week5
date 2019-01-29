@@ -22,7 +22,8 @@ public class Door : Interactable
         {
 
             AudioSource.PlayClipAtPoint(audioClip2, transform.position);
-            AudioSource.PlayClipAtPoint(audioClip3, transform.position);
+            Invoke("SoundPlay", 2);
+           
             Debug.Log("Open");
             overPanel.SetActive(true);
             
@@ -49,10 +50,10 @@ public class Door : Interactable
         
     }
 
-    IEnumerator playSounds()
+    void SoundPlay()
     {
-        AudioSource.PlayClipAtPoint(audioClip2, transform.position);
-        yield return new WaitForSeconds(audioClip2.length);
         AudioSource.PlayClipAtPoint(audioClip3, transform.position);
     }
+
+ 
 }
