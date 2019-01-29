@@ -6,6 +6,7 @@ public class Door : Interactable
 {
     public AudioClip audioClip;
     public AudioClip audioClip2;
+    public AudioClip audioClip3;
     public GameObject overPanel;
 
     public override void Interact()
@@ -19,9 +20,12 @@ public class Door : Interactable
         // 여기에 if문으로 열쇠합
         if(Inventory.masterkey == true)
         {
+
             AudioSource.PlayClipAtPoint(audioClip2, transform.position);
+            AudioSource.PlayClipAtPoint(audioClip3, transform.position);
             Debug.Log("Open");
             overPanel.SetActive(true);
+            
         }
         else
         {
@@ -30,6 +34,7 @@ public class Door : Interactable
             Debug.Log("Door closed");
 
             AudioSource.PlayClipAtPoint(audioClip, transform.position, 0.7f);
+            
         }
     }
     // Start is called before the first frame update
@@ -42,5 +47,12 @@ public class Door : Interactable
     void Update()
     {
         
+    }
+
+    IEnumerator playSounds()
+    {
+        AudioSource.PlayClipAtPoint(audioClip2, transform.position);
+        yield return new WaitForSeconds(audioClip2.length);
+        AudioSource.PlayClipAtPoint(audioClip3, transform.position);
     }
 }
