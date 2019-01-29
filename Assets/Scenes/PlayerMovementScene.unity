@@ -2933,7 +2933,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   audioClip: {fileID: 8300000, guid: e295e36b64bbb0e4fb74604edc7df1f6, type: 3}
   audioClip2: {fileID: 8300000, guid: 11bd74033e1bcda4d8746b840c2ae2fd, type: 3}
-  audioClip3: {fileID: 8300000, guid: 13193a6215178d24f9a56c570ff85856, type: 3}
+  audioClip3: {fileID: 8300000, guid: 93e38a39df51bf54e80978f340dc30cb, type: 3}
   overPanel: {fileID: 792729913}
 --- !u!4 &579871978 stripped
 Transform:
